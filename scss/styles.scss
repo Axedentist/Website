@@ -758,6 +758,16 @@ footer {
     margin-right: 15px;
   }
   
+  @media (max-width: 500px) {
+    .testimonial {
+        text-align: center;
+    }
+    .testimonial img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
 
 /*
     -------------------------------
@@ -1039,15 +1049,6 @@ footer {
             font-size: 0.9em;
             padding: 5px 10px;
         }
-    }
-
-    .testimonial {
-        text-align: center;
-    }
-    .testimonial img {
-        margin: auto;
-        float: none;
-        display: block;
     }
 
 }
