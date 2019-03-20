@@ -592,7 +592,7 @@ footer {
     padding: 15px;
     border: 1px solid $border;
     background: #fff;
-    text-align: left;
+    text-align: center;
 
     h3 {
         font-weight: 500;
@@ -795,7 +795,7 @@ footer {
   
   /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
   .testimony img {
-    float: left;
+    float: center;
     margin-right: 20px;
     border-radius: 50%;
   }
@@ -814,7 +814,7 @@ footer {
   
     .testimony img {
       margin: auto;
-      float: none;
+      float: center;
       display: block;
     }
   }
