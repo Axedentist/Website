@@ -784,20 +784,23 @@ footer {
     border-radius: 5px;
     padding: 16px;
     margin: 16px 0;
+    text-align: center;
   }
   
   /* Clear floats after containers */
   .testimony::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
+    text-align: center;
   }
   
   /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
   .testimony img {
     float: center;
-    margin-right: 20px;
+    margin: auto;
     border-radius: 50%;
+    float: center;
   }
   
   /* Increase the font-size of a span element */
@@ -808,9 +811,6 @@ footer {
   
   /* Add media queries for responsiveness. This will center both the text and the image inside the container */
   @media (max-width: 500px) {
-    .testimony {
-      text-align: center;
-    }
   
     .testimony img {
       margin: auto;
