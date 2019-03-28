@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openVolunteer(evt, org) {
     var i, volunteercontent, volunteerlinks;
     volunteercontent = document.getElementsByClassName("volunteercontent");
     for (i = 0; i < volunteercontent.length; i++) {
@@ -8,7 +8,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < volunteerlinks.length; i++) {
       volunteerlinks[i].className = volunteerlinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(org).style.display = "block";
     evt.currentTarget.className += " active";
   }
   
