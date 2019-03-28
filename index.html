@@ -87,9 +87,6 @@
                     <p>    
                         <br> Chase is seeking to pivot to a role where he can leverage his degree in MIS to begin to help companies maximize the benefits of their assets and continue to learn, grow, and pursue his passion of solving problems for others.
                     </p>
-                    <p>
-                        <br> I am pretty much the greatest
-                    </p>
                 </div>
             </div>
         </div>
@@ -244,58 +241,34 @@
     <!-- End #testimonials -->
 
 
-    <div id="education">
-        <h2 class="heading">Leadership & Volunteer</h2>
-        <div id="education-block">
-            <h3>WSU SIM Club</h3>
-            <span class="education-date">2018 - 2019</span>
-            <h4>President</h4>
-            <p>
-                Assist in the management of SIM events to provide a good time for those donating their time and money to the event.<br>
-                Coordinate events and speakers for WSU students to interact with business professionals.<br>
-                Work Closely with teaching staff and delegate work among other SIM officers.<br>
-                Tutor underclassmen for MIS classes.<br>
-            </p>
+    <div id="Volunteer">
+            
+        <h2>volunteers</h2>
+        <p>Click on the x button in the top right corner to close the current volunteer:</p>
+
+        <div class="volunteer">
+        <button class="volunteerlinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+        <button class="volunteerlinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="volunteerlinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
         </div>
-        <!-- End .volunteer-block -->
-        <div class="education-block">
-            <h3>Washington State University</h3>
-            <span class="education-date">August 2015 - May 2019</span>
-            <h4>Bachelor in Management Information Systems</h4>
-            <ul>
-                <li>
-                    Description
-                </li>
-                <li>
-                    Description
-                </li>
-            </ul>
+
+        <div id="London" class="volunteercontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
         </div>
-        <div id="education-block">
-            <h3>Toastmasters</h3>
-            <span class ="education-date">2017 - 2019</span>
-            <p>
-                Honed public speaking skills by presenting on prepared and unprepared topics.
-            </p>
+
+        <div id="Paris" class="volunteercontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
         </div>
-        <!-- End .volunteer-block -->
-        <div id="education-block">
-            <h3>Kenji Rentals</h3>
-            <span class="education-date">2018 - 2019</span>
-            <h4>Property Manager</h4>
-            <p>
-                Oversaw the management of a 7-person household by interviewing potential tenants, managing upkeep & repairs, and resolving disputes.
-            </p>
-        </div>
-        <!-- End .volunteer-block -->
-        <div id="education-block">
-            <h3>Coding for Kids</h3>
-            <span class="education-date">2015-2017</span>
-            <h4>Instructor</h4>
-            <p>
-                Helped lead elementary and middle school aged students in the basics of coding language and logic, helping to provide them with a strong basis to build upon as they transitioned to high school.
-            </p>
-        </div>
+
+        <div id="Tokyo" class="volunteercontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+        </div>    
     </div>
         <!-- End #volunteer -->
     
