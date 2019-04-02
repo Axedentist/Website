@@ -23,6 +23,23 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('js'));
 });
 
+gulp.task('Vscript', function() {
+    return gulp.src('js/VolunteerScript.js')
+        .pipe(plumber(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        })))
+        .pipe(uglify({
+            output: {
+                comments: '/^!/'
+            }
+        }))
+        .pipe(rename({extname: '.min.js'}))
+        .pipe(gulp.dest('js'));
+});
+
 gulp.task('styles', function () {
     return gulp.src('./scss/styles.scss')
         .pipe(wait(250))
@@ -32,5 +49,6 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function() {
     gulp.watch('js/scripts.js', gulp.series('scripts'));
+    gulp.watch('js/VolunteerScript.js', gulp.series('Vscript'));
     gulp.watch('scss/styles.scss', gulp.series('styles'));
 });
