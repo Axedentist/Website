@@ -1,15 +1,15 @@
 
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+function openvolunteer(evt, volunteerName) {
+    var i, volunteerContent, volunteerLinks;
+    volunteerContent = document.getElementsByClassName("volunteerContent");
+    for (i = 0; i < volunteerContent.length; i++) {
+      volunteerContent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    volunteerLinks = document.getElementsByClassName("volunteerLinks");
+    for (i = 0; i < volunteerLinks.length; i++) {
+        volunteerLinks[i].className = volunteerLinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(volunteerName).style.display = "block";
     evt.currentTarget.className += " active";
   }
   

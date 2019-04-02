@@ -23,7 +23,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('js'));
 });
 
-gulp.task('Vscript', function() {
+gulp.task('vScript', function() {
     return gulp.src('js/VolunteerScript.js')
         .pipe(plumber(plumber({
             errorHandler: function (err) {
@@ -49,6 +49,6 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function() {
     gulp.watch('js/scripts.js', gulp.series('scripts'));
-    gulp.watch('js/VolunteerScript.js', gulp.series('Vscript'));
+    gulp.watch('js/VolunteerScript.js', gulp.series('vScript'));
     gulp.watch('scss/styles.scss', gulp.series('styles'));
 });
